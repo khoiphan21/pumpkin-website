@@ -7,7 +7,7 @@ div.wrapper {
     text-transform: uppercase;
     section.card {
         @include column-center();
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.9);
         width: 500px;
         height: 400px;
         padding: 10px 30px;
