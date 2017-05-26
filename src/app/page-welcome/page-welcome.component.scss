@@ -2,8 +2,7 @@
 div.wrapper {
     @include column-center();
     width: 100vw;
-    height: 100vh;
-    // background-color: rgba(40, 40, 40, 1);
+    height: 100vh; // background-color: rgba(40, 40, 40, 1);
     text-transform: uppercase;
     section.card {
         @include column-center();
@@ -46,6 +45,10 @@ div.wrapper {
             h1 {
                 font-size: 25px;
                 text-align: center;
+                &:hover,
+                &:focus {
+                    color: #B75041;
+                }
             }
         }
     }
