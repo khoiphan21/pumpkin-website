@@ -3,22 +3,50 @@ div.wrapper {
     @include column-center();
     width: 100vw;
     height: 100vh;
-    background-color: rgba(40, 40, 40, 1);
+    // background-color: rgba(40, 40, 40, 1);
     text-transform: uppercase;
     section.card {
         @include column-center();
         background-color: rgba(255, 255, 255, 0.9);
-        width: 500px;
-        height: 400px;
+        width: 100vw;
+        height: 80vh;
         padding: 10px 30px;
         box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
         border-radius: 3px;
         img {
+            @include transition-basic($speed: 0.5s);
             height: 300px;
             width: auto;
+            &:hover,
+            &:focus {
+                height: 340px;
+            }
         }
         h1 {
+            @include transition-basic($speed: 0.5s);
+            padding: 0;
             color: #39201F;
+            &:hover,
+            &:focus {
+                color: #B75041;
+            }
+        }
+        @include media(mobile-screen) {
+            width: 200px;
+            height: 300px;
+            padding: 5px 10px;
+            img {
+                @include transition-basic($speed: 0.5s);
+                height: 150px;
+                &:hover,
+                &:focus {
+                    height: 180px;
+                }
+            }
+            h1 {
+                font-size: 25px;
+                text-align: center;
+            }
         }
     }
 }
