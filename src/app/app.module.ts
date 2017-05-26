@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PageWelcomeComponent } from './page-welcome/page-welcome.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageWelcomeComponent
   ],
   imports: [
     BrowserModule,
