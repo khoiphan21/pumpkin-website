@@ -1,0 +1,24 @@
+@import '../sass/mixins';
+div.wrapper {
+    @include column-center();
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(40, 40, 40, 1);
+    text-transform: uppercase;
+    section.card {
+        @include column-center();
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 500px;
+        height: 400px;
+        padding: 10px 30px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+        border-radius: 3px;
+        img {
+            height: 300px;
+            width: auto;
+        }
+        h1 {
+            color: #39201F;
+        }
+    }
+}
